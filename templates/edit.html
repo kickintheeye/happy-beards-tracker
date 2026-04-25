@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Order</title>
+</head>
+<body>
+    <h1>Edit Order</h1>
+
+    <form method="POST" action="">
+        <label>Order ID:</label><br>
+        <input type="text" name="order_id" value="{{ order.order_id }}"><br><br>
+
+        <label>Customer:</label><br>
+        <input type="text" name="customer" value="{{ order.customer }}"><br><br>
+
+        <label>Puppy:</label><br>
+        <input type="text" name="puppy" value="{{ order.puppy }}"><br><br>
+
+        <label>Total Price:</label><br>
+        <input type="number" name="total_price" value="{{ order.total_price }}"><br><br>
+
+        <label>Amount Paid:</label><br>
+        <input type="number" name="amount_paid" value="{{ order.amount_paid }}"><br><br>
+
+        <button type="submit">Update Order</button>
+    </form>
+
+    <br>
+    <a href="/">Back Home</a>
+</body>
+</html>
