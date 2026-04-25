@@ -37,7 +37,8 @@ class Order(db.Model):
 
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
 
-
+with app.app_context():
+    db.create_all()
 def current_user():
     user_id = session.get("user_id")
     if user_id:
